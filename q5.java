@@ -1,4 +1,4 @@
-public class q5
+public class q5 // to find the smallest positive number that is evenly divisible by all of the numbers from 1 to 20.
 {
     public static void main(String args[])
     {
