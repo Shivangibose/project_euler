@@ -1,4 +1,4 @@
-public class q4
+public class q4 // to find the largest palindrome made from the product of two 3-digit number.
 { 
     public static void main(String args[])
     {
