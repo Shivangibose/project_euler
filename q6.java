@@ -2,13 +2,10 @@ public class q6 // to find the difference between sum of square of first 100 nat
 {
     public static void main(String args[])
     {
-        int s1=0,s2=0,p1;
-        for(int a=1;a<=100;a++)
-        {
-            p1=a*a;
-            s1=s1+p1;
-            s2=s2+a;
-        }
-        System.out.println((s2*s2)-s1);
+        int s1=0,s2=0;
+        s1=(100*(100+1)*(2*100+1))/6;
+        s2=Math.pow(100*(100+1)/2,2);
+         
+        System.out.println(s2-s1);
     }
 }
