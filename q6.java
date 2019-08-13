@@ -7,10 +7,7 @@ public class q6 // to find the difference between sum of square of first 100 nat
         {
             p1=a*a;
             s1=s1+p1;
-        }
-        for(int b=1;b<=100;b++)
-        {
-            s2=s2+b;
+            s2=s2+a;
         }
         System.out.println((s2*s2)-s1);
     }
