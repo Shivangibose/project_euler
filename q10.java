@@ -1,4 +1,4 @@
-public class q10
+public class q10 // to find the index of the first term in the fibonacci sequence to contain 1000 digits.
 {
     public static void main(String args[])
     {
