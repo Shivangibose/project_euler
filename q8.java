@@ -1,4 +1,4 @@
-public class q8
+public class q8 //to find the sum of all the primes below two million.
 {
     public static void main(String args[])
     {
