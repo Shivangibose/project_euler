@@ -1,4 +1,4 @@
-public class q2
+public class q2 // by considering the terms in the fibonacci series whose value does not exceed 4 million .find the sum of the even valued terms
 {
     public static void main(String args[])
     {
