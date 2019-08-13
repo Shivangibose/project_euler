@@ -3,7 +3,7 @@ public class q3 // to find the largest prime factor of 600851475143
     public static void main(String args[])
     {
         long x=600851475413l,f=0,a=0;
-        for(long i=3;i<(x/2);i=i+2)
+        for(long i=3;i<x;i=i+2)
         {
             if(x%i==0)
             for(long t=1;t<=i;t++)
