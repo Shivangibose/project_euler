@@ -1,4 +1,4 @@
-public class q7
+public class q7 // to find the 10001st prime number.
 {
     public static void main(String args[])
     {
