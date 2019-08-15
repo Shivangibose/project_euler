@@ -1,25 +1,29 @@
-public class q3 // to find the largest prime factor of 600851475143
+public class q3 //to find the largest prime factor of 600851475143
 {
     public static void main(String args[])
     {
-        long x=600851475413l,f=0,a=0;
-        for(long i=3;i<x;i=i+2)
+        long x=600851475143l;
+        long max;
+        double i=Math.sqrt(x);
+        for(int t=3;t<i;t=t+2)
         {
-            if(x%i==0)
-            for(long t=1;t<=i;t++)
+            while(x%t==0)
             {
-                if(i%t==0)
-                f++;
-            }
-            if(f==2)
-            {
-                a=i;
-                f=0;
+                x=x/t;
             }
         }
-        System.out.println(a);
+        if(x>2)
+        {
+            System.out.println(x);
+            max=x;
+            System.out.println("largest="+max);
+        }
     }
 }
-            
+        
+        
+        
+        
+        
             
             
