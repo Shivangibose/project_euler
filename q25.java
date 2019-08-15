@@ -6,10 +6,8 @@ public class q25 // to find the index of the first term in the fibonacci sequenc
         while(c>=0)
         {
             c=a+b;
-            x=c;
             p++;
-       
-            String x=c;
+            String x=Integer.toString(c);
             int t=x.length();
              if(t==1000)
              {
