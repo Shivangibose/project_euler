@@ -1,20 +1,21 @@
-public class q10 //to find the sum of all the primes below two million.
+public class q10 //to find the sum of all primes below two million
 {
     public static void main(String args[])
     {
-        int s=0,f=0;
-        for(int x=1;x<=2000000;x++)
+        int x,i,f=0;
+        long s=2;
+        for(x=3;x<=2000000;x+=2)
         {
-            for(int i=1;i<=x;i++)
+            for(i=3;i<=Math.sqrt(x);i+=2)
             {
                 if(x%i==0)
                 {
-                    f++;
+                    f=1; 
                 }
             }
-            if(f==2)
-            {
-                s=s+x;
+           if(f==0)
+           {
+            s=s+x; 
             }
             f=0;
         }
