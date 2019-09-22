@@ -3,7 +3,7 @@ public class q5_1//to find the smallest positive number divisible by all numbers
     public static void main(String args[])
     {
       int l=1;
-      for(int i=1;i<=20;i++)//when I take i from 1 to 10 answer is 2520 which us correct
+      for(int i=1;i<=20;i++)//when I take i from 1 to 10 answer is 2520 which is correct as specified in the example.
       {                     //when I take i from 1 to 20 answer is 18044195 but the correct answer is 232792560 
           l=lcm(l,i);
         }
