@@ -1,30 +1,59 @@
-public class q5//to find the smallest positive number divisible by all numbers from 1 to 20
+public class q5_1//to find the smallest positive number divisible by all numbers from 1 to 20
 {
     public static void main(String args[])
     {
-        int i,x,p=0;
-       for(x=2520;x>0 && p!=1;x+=20)
+      int l=1;
+      for(int i=1;i<=20;i++)
+      {
+          l=lcm(l,i);
+        }
+        System.out.println(l);
+    
+       
+    }
+    public static int lcm(int x,int y)
+    {
+        int hcf=1;
+        int least=0;
+        if(x>y)
         {
-            for(i=11;i<=20;i++)
+            for(int j=1;j<=y;j++)
             {
-                if(x%i!=0)
+                if(x%j==0 && y%j==0)
                 {
-                    break;
-                }                              
-                else if(i==20)
-                {                                                                                                 
-                    p=1;
-                    break;
-                }               
-            }                        
-       }
-       System.out.println(x=x-20);
-   }
+                    hcf=j;
+                }
+            }
+        }
+            if(y>x)
+            {
+                for(int k=1;k<=x;k++)
+                {
+                    if(y%k==0 && x%k==0)
+                    {
+                        hcf=k;
+                    }
+                }
+            }
+            least=(x*y)/hcf;
+            return least;
+        
+    }
 }
+   
+
           
             
               
              
+             
+                 
+                 
+        
+    
+
+        
+
              
                  
                  
