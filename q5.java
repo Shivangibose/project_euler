@@ -3,14 +3,15 @@ public class q5_1//to find the smallest positive number divisible by all numbers
     public static void main(String args[])
     {
       int l=1;
-      for(int i=1;i<=20;i++)
-      {
+      for(int i=1;i<=20;i++)//when I take i from 1 to 10 answer is 2520 which us correct
+      {                     //when I take i from 1 to 20 answer is 18044195 but the correct answer is 232792560 
           l=lcm(l,i);
         }
         System.out.println(l);
     
        
     }
+    
     public static int lcm(int x,int y)
     {
         int hcf=1;
